@@ -1,9 +1,8 @@
-FROM sdhibit/rpi-raspbian:jessie
-MAINTAINER Yannick Croissant <yannick.croissant@gmail.com>
+FROM ubergarm/armhf-ubuntu:trusty
 
 ENV QEMU_EXECVE 1
 # Force armv6l
-ENV QEMU_CPU arm1176
+# ENV QEMU_CPU arm1176
 
 COPY . /usr/bin
 
